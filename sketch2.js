@@ -17,11 +17,11 @@
   }*/
 
   function touchMoved() {
-    if(gameState === "play" && (mouseX > width/7 - 150 && mouseX < width/7 + 150) && (mouseY > height/1.469 - 190 && mouseY < height/1.460 + 110)) {
+    if(gameState === "play" && (mouseX > width/7 - 200 && mouseX < width/7 + 150) && (mouseY > height/1.469 - 190 && mouseY < height/1.460 + 110)) {
       Matter.Body.setPosition(ball.body, {x: mouseX , y: mouseY});
     }
-  if(mouseX < width/7 - 150) {
-    Matter.Body.setPosition(ball.body, {x: width/7 - 150, y: ball.body.position.y});
+  if(mouseX < width/7 - 200) {
+    Matter.Body.setPosition(ball.body, {x: width/7 - 200, y: ball.body.position.y});
   }
   if(mouseX > width/7 + 150) {
     Matter.Body.setPosition(ball.body, {x: width/7 + 150, y: ball.body.position.y})
