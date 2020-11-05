@@ -36,7 +36,7 @@ function setup() {
   //restart = createSprite(width/1.1, height - height/1.1);
   //restart.addImage(restartImage);
   //plat4 = new Platform(width/2, height, width, 50)
-  ball = new Striker(width/7, plat1.body.position.y - 40, strikerRadius);
+  ball = new Striker(width/5, plat1.body.position.y - 40, strikerRadius);
   rope = new chain(ball.body, {x: ball.body.position.x, y: ball.body.position.y}, 0.2, 10);
   tower1X = plat1.body.position.x - 100;
   tower1Y = plat1.body.position.y - 30;
