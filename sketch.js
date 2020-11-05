@@ -288,7 +288,7 @@ function draw() {
   //Restart();
   //console.log(score);
 
-  if((ball.body.position.x < 0 || (ball.body.position.x > width && ball.body.position.y > height) || ball.body.position.y > height || ball.body.position.y < 0 /*|| ball.body.speed < 3*/) && shotCounter>0) {
+  if((ball.body.position.x < 0 || ball.body.position.x > width*2.5 || ball.body.position.y > height || ball.body.position.y < 0 /*|| ball.body.speed < 3*/) && shotCounter>0 && gameState === "play") {
       shotCounter = shotCounter - 1;
       rope.attach(ball.body);
       gameState = "play";
